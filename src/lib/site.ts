@@ -42,6 +42,8 @@ export type Service = {
   price: string;
   duration: string;
   features: string[];
+  image: string;
+  imageAlt: string;
   featured?: boolean;
 };
 
@@ -56,6 +58,8 @@ export const services: Service[] = [
     price: "از ۱۸٬۵۰۰٬۰۰۰ تومان",
     duration: "۱ تا ۳ جلسه",
     features: ["اسکن سه‌بعدی و گاید جراحی", "بی‌حسی کامل و بدون درد", "گارانتی ۱۰ ساله"],
+    image: "/images/services/implant.jpg",
+    imageAlt: "مدل ایمپلنت دندانی داخل استخوان فک",
     featured: true,
   },
   {
@@ -68,6 +72,8 @@ export const services: Service[] = [
     price: "از ۱۲٬۰۰۰٬۰۰۰ تومان",
     duration: "۲ تا ۳ جلسه",
     features: ["طراحی دیجیتال لبخند", "کمترین تراش دندان", "مقاوم در برابر لکه"],
+    image: "/images/services/laminate.jpg",
+    imageAlt: "قرار دادن ونیر سرامیکی روی دندان توسط دندانپزشک",
     featured: true,
   },
   {
@@ -80,6 +86,8 @@ export const services: Service[] = [
     price: "از ۴۵٬۰۰۰٬۰۰۰ تومان",
     duration: "۶ تا ۱۲ ماه",
     features: ["شفاف و تقریباً نامرئی", "قابل برداشتن هنگام غذا", "پلن درمان دیجیتال"],
+    image: "/images/services/aligner.jpg",
+    imageAlt: "الاینر شفاف ارتودنسی در دست بیمار",
     featured: true,
   },
   {
@@ -92,6 +100,8 @@ export const services: Service[] = [
     price: "از ۶٬۵۰۰٬۰۰۰ تومان",
     duration: "۱ جلسه ۶۰ دقیقه",
     features: ["نتیجه در همان جلسه", "محافظت از لثه", "ژل ضدحساسیت"],
+    image: "/images/services/whitening.jpg",
+    imageAlt: "دستگاه بلیچینگ و سفیدسازی دندان روی دندان بیمار",
     featured: true,
   },
   {
@@ -104,6 +114,8 @@ export const services: Service[] = [
     price: "از ۴٬۲۰۰٬۰۰۰ تومان",
     duration: "۱ تا ۲ جلسه",
     features: ["بی‌حسی کامل", "دقت اپکس‌لوکیتور", "کامپوزیت همرنگ"],
+    image: "/images/services/root-canal.jpg",
+    imageAlt: "مدل برش‌خورده دندان برای نمایش کانال ریشه",
     featured: true,
   },
   {
@@ -116,6 +128,8 @@ export const services: Service[] = [
     price: "از ۲٬۵۰۰٬۰۰۰ تومان",
     duration: "۳۰ تا ۶۰ دقیقه",
     features: ["فلوراید و فیشورسیلانت", "رفتاردرمانی کودک", "فضای بازی اختصاصی"],
+    image: "/images/services/pediatric.jpg",
+    imageAlt: "کودک خندان روی صندلی دندانپزشکی در حال معاینه",
     featured: true,
   },
   {
@@ -128,6 +142,8 @@ export const services: Service[] = [
     price: "از ۱٬۸۰۰٬۰۰۰ تومان",
     duration: "۴۵ دقیقه",
     features: ["اولتراسونیک و ایرفلو", "آموزش بهداشت دهان", "پیشگیری از بیماری لثه"],
+    image: "/images/services/scaling.jpg",
+    imageAlt: "نوک دستگاه جرم‌گیری اولتراسونیک در دست دندانپزشک",
   },
   {
     id: "zirconia",
@@ -139,6 +155,8 @@ export const services: Service[] = [
     price: "از ۹٬۰۰۰٬۰۰۰ تومان",
     duration: "۲ جلسه",
     features: ["استحکام بالا", "تراش کم دندان", "هم‌رنگی دقیق"],
+    image: "/images/services/zirconia.jpg",
+    imageAlt: "روکش سرامیکی زیرکونیا روی پایه ایمپلنت",
   },
 ];
 

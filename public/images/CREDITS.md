@@ -12,6 +12,14 @@ launch.
 | `care.jpg` | [Pexels photo 3845983](https://www.pexels.com/photo/3845983/) | Pexels License |
 | `doctor.jpg` | [Unsplash photo 1612349317150-e413f6a5b16d](https://images.unsplash.com/photo-1612349317150-e413f6a5b16d) | Unsplash License |
 | `clinic.jpg` | [Unsplash photo 1629909613654-28e377c37b09](https://images.unsplash.com/photo-1629909613654-28e377c37b09) | Unsplash License |
+| `services/implant.jpg` | [Pexels photo 6502305](https://www.pexels.com/photo/6502305/) | Pexels License |
+| `services/laminate.jpg` | [Pexels photo 6627571](https://www.pexels.com/photo/6627571/) | Pexels License |
+| `services/aligner.jpg` | [Pexels photo 10896051](https://www.pexels.com/photo/10896051/) | Pexels License |
+| `services/whitening.jpg` | [Pexels photo 5622271](https://www.pexels.com/photo/5622271/) | Pexels License |
+| `services/root-canal.jpg` | [Pexels photo 4971514](https://www.pexels.com/photo/4971514/) | Pexels License |
+| `services/pediatric.jpg` | [Pexels photo 8260438](https://www.pexels.com/photo/8260438/) | Pexels License |
+| `services/scaling.jpg` | [Pexels photo 7789675](https://www.pexels.com/photo/7789675/) | Pexels License |
+| `services/zirconia.jpg` | [Pexels photo 38362421](https://www.pexels.com/photo/38362421/) | Pexels License |
 
 `hero.jpg` is kept only for the archived design mockups under `public/mockups/`.
 
