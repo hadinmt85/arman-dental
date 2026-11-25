@@ -4,6 +4,7 @@ import "./globals.css";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { site } from "@/lib/site";
+import { siteUrl } from "@/lib/site-url";
 
 const estedad = localFont({
   src: "./fonts/Estedad-Variable.woff2",
@@ -14,7 +15,7 @@ const estedad = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://armandental.ir"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "کلینیک دندانپزشکی آرمان | ایمپلنت، لمینت و زیبایی دندان",
     template: "%s | کلینیک دندانپزشکی آرمان",
