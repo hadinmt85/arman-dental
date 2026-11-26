@@ -58,7 +58,7 @@ export default function ServicesPage() {
           {assurances.map((item) => (
             <div
               key={item.title}
-              className="flex items-start gap-3 rounded-2xl border border-line bg-white p-4 shadow-card"
+              className="flex items-start gap-3 rounded-2xl border border-white/75 bg-white/80 p-4 shadow-card backdrop-blur-sm"
             >
               <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-brand-50 text-brand-600">
                 <Icon name={item.icon} className="h-5 w-5" />
@@ -81,6 +81,7 @@ export default function ServicesPage() {
           <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
             <SectionHeading
               eyebrow="فهرست خدمات"
+              index="۰۱"
               title="درمان مناسب تو، با جزئیات کامل."
               description="روی هر خدمت بزن تا توضیحات، ویژگی‌ها و تعرفه تقریبی را ببینی. برای انتخاب دقیق، یک مشاوره کوتاه کافی است."
             />
@@ -107,6 +108,7 @@ export default function ServicesPage() {
         <div className="container-x section">
           <SectionHeading
             eyebrow="مسیر درمان"
+            index="۰۲"
             title="از مشاوره تا پیگیری، در چهار قدم."
             description="یک فرآیند ثابت برای همه درمان‌ها؛ تا بدانی در هر مرحله چه اتفاقی می‌افتد."
           />
@@ -115,7 +117,7 @@ export default function ServicesPage() {
             {processSteps.map((step) => (
               <div
                 key={step.step}
-                className="rounded-2xl border border-line bg-sky-soft/60 p-5"
+                className="rounded-2xl border border-white/75 bg-white/80 p-5 shadow-card backdrop-blur-sm"
               >
                 <span className="grid h-9 w-9 place-items-center rounded-xl bg-white text-[11px] font-bold text-brand-600 shadow-sm">
                   {step.step}

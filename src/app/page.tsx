@@ -72,6 +72,17 @@ const features = [
   },
 ];
 
+const marqueeItems = [
+  "ایمپلنت دیجیتال",
+  "لمینت سرامیکی",
+  "ارتودنسی نامرئی",
+  "بلیچینگ",
+  "درمان ریشه",
+  "دندانپزشکی کودکان",
+  "روکش زیرکونیا",
+  "جرم‌گیری و بروساژ",
+];
+
 export default function HomePage() {
   const featured = services.filter((service) => service.featured);
 
@@ -83,29 +94,55 @@ export default function HomePage() {
       />
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-hero">
-        <div className="pointer-events-none absolute -left-24 top-16 h-64 w-64 rounded-full bg-brand-200/25 blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-24 right-1/3 h-64 w-64 rounded-full bg-mint-200/30 blur-3xl" />
+      <section className="relative isolate overflow-hidden bg-hero">
+        <div className="pointer-events-none absolute inset-0 bg-grid-soft opacity-70" />
+        <div className="float-slower pointer-events-none absolute -left-32 top-10 h-72 w-72 rounded-full bg-brand-200/35 blur-3xl" />
+        <div className="float-slow pointer-events-none absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-mint-200/40 blur-3xl" />
 
-        <div className="container-x relative grid gap-10 pb-14 pt-10 sm:pt-12 md:grid-cols-12 md:items-center md:gap-10 md:pb-16">
+        <div className="container-x relative grid gap-12 pb-24 pt-12 sm:pt-16 md:grid-cols-12 md:items-center md:gap-8 md:pb-28">
           <div className="animate-fade md:col-span-6">
-            <span className="inline-flex items-center gap-2 rounded-full border border-line bg-white/90 px-3.5 py-1.5 text-[10px] font-medium text-muted shadow-sm">
-              <span className="h-1.5 w-1.5 rounded-full bg-mint-500" />
-              کلینیک دندانپزشکی در سعادت‌آباد
-            </span>
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="glass inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-[10px] font-medium text-ink-soft">
+                <Icon name="pin" className="h-3.5 w-3.5 text-brand-600" />
+                سعادت‌آباد، تهران
+              </span>
+              <span className="inline-flex items-center gap-2 rounded-full border border-mint-200/80 bg-mint-50/80 px-3 py-1.5 text-[10px] font-semibold text-mint-700 backdrop-blur">
+                <span className="relative flex h-1.5 w-1.5">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-mint-500 opacity-60" />
+                  <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-mint-500" />
+                </span>
+                پذیرش امروز باز است
+              </span>
+            </div>
 
-            <h1 className="mt-5 text-[clamp(2.6rem,5.6vw,4.3rem)] font-extrabold leading-[1.12] tracking-[-0.055em] text-ink">
+            <h1 className="mt-7 text-[clamp(2.9rem,6vw,5rem)] font-black leading-[1.04] tracking-[-0.06em] text-ink">
               دندانپزشکی،
-              <br />
-              <span className="text-brand-600">بدون نگرانی.</span>
+              <span className="text-gradient relative mt-1 block w-fit">
+                بدون نگرانی.
+                <svg
+                  viewBox="0 0 300 12"
+                  fill="none"
+                  preserveAspectRatio="none"
+                  aria-hidden="true"
+                  className="absolute -bottom-2 right-0 h-3 w-full text-mint-400"
+                >
+                  <path
+                    d="M2 9C70 3 180 2 298 7"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    opacity="0.7"
+                  />
+                </svg>
+              </span>
             </h1>
 
-            <p className="mt-5 max-w-md text-xs leading-7 text-muted sm:text-[13.5px]">
+            <p className="mt-7 max-w-md text-[13px] leading-8 text-muted">
               درمان تخصصی با آرامش، شفافیت و تجهیزات دیجیتال. از مشاوره تا
               لبخند نهایی، همه‌چیز روشن و بدون استرس است.
             </p>
 
-            <div className="mt-7 flex flex-wrap items-center gap-3">
+            <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link href="/appointment" className="btn btn-primary">
                 رزرو نوبت آنلاین
                 <Icon name="arrowLeft" className="h-4 w-4" />
@@ -115,88 +152,158 @@ export default function HomePage() {
               </Link>
             </div>
 
-            <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-line pt-5">
-              <span className="flex items-center gap-2 text-[10px] text-muted">
-                <b className="text-[13px] font-extrabold text-ink">۴.۹</b>
-                <span className="text-amber-400">★★★★★</span>
-                از ۱٬۲۰۰ نظر
-              </span>
-              <span className="text-[10px] text-muted">
-                <b className="text-[13px] font-extrabold text-ink">۱۲٬۰۰۰+</b>{" "}
-                بیمار درمان‌شده
-              </span>
-              <span className="text-[10px] text-muted">
-                <b className="text-[13px] font-extrabold text-ink">۱۸ سال</b>{" "}
-                تجربه بالینی
-              </span>
+            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 border-t border-line/80 pt-6">
+              <div className="flex items-center gap-3">
+                <div className="flex -space-x-2.5 rtl:space-x-reverse">
+                  {[
+                    { initial: "م", tone: "from-brand-100 to-brand-50 text-brand-700" },
+                    { initial: "س", tone: "from-mint-100 to-mint-50 text-mint-700" },
+                    { initial: "ر", tone: "from-brand-200/70 to-brand-50 text-brand-800" },
+                  ].map((avatar) => (
+                    <span
+                      key={avatar.initial}
+                      className={`grid h-8 w-8 place-items-center rounded-full bg-gradient-to-br text-[9px] font-bold ring-2 ring-white ${avatar.tone}`}
+                    >
+                      {avatar.initial}
+                    </span>
+                  ))}
+                </div>
+                <div>
+                  <div className="flex items-center gap-1 text-amber-400">
+                    {Array.from({ length: 5 }).map((_, index) => (
+                      <Icon key={index} name="star" className="h-3 w-3" />
+                    ))}
+                    <b className="ms-1 text-[11px] font-extrabold text-ink">
+                      ۴.۹
+                    </b>
+                  </div>
+                  <span className="mt-0.5 block text-[9px] text-muted">
+                    از ۱٬۲۰۰ نظر ثبت‌شده
+                  </span>
+                </div>
+              </div>
+
+              <span className="hidden h-9 w-px bg-line sm:block" />
+
+              <div>
+                <b className="block text-[15px] font-extrabold text-ink">
+                  ۱۲٬۰۰۰+
+                </b>
+                <span className="block text-[9px] text-muted">
+                  بیمار درمان‌شده
+                </span>
+              </div>
+              <div>
+                <b className="block text-[15px] font-extrabold text-ink">
+                  ۱۸ سال
+                </b>
+                <span className="block text-[9px] text-muted">تجربه بالینی</span>
+              </div>
             </div>
           </div>
 
-          <div className="animate-fade fade-2 relative mx-auto w-full max-w-[440px] md:col-span-6 md:max-w-[450px]">
-            <div className="rounded-[2rem] border border-white/80 bg-white p-2 shadow-soft">
-              <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[1.6rem] bg-sky">
+          <div className="animate-fade fade-2 relative mx-auto w-full max-w-[470px] md:col-span-6">
+            <div className="pointer-events-none absolute -inset-8 rounded-[3rem] bg-gradient-to-br from-brand-200/40 via-white/0 to-mint-200/50 blur-2xl" />
+            <div className="pointer-events-none absolute -right-5 -top-5 hidden h-28 w-28 rounded-full border border-brand-200/70 sm:block" />
+            <div className="pointer-events-none absolute -bottom-6 left-6 hidden h-16 w-16 rotate-12 rounded-2xl border border-mint-300/60 sm:block" />
+
+            <span className="absolute -left-9 top-1/2 hidden -translate-y-1/2 -rotate-90 text-[8px] font-semibold tracking-[0.34em] text-muted/60 lg:block">
+              DIGITAL DENTISTRY
+            </span>
+
+            <div className="relative rounded-[2.25rem] border border-white/80 bg-white/65 p-2.5 shadow-soft backdrop-blur">
+              <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[1.85rem] bg-sky">
                 <Image
                   src="/images/hero-mint-clean.jpg"
                   alt="کلوزآپ لب و دندان با لب صورتی ملایم، بدون چهره"
                   fill
                   priority
-                  sizes="(min-width: 1024px) 430px, 90vw"
+                  sizes="(min-width: 1024px) 450px, 90vw"
                   className="object-cover"
                 />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand-900/45 via-transparent to-transparent" />
+                <div className="absolute bottom-3.5 left-3.5 right-3.5 flex items-center justify-between gap-3 rounded-2xl border border-white/25 bg-brand-900/20 px-3.5 py-2.5 text-white backdrop-blur-md">
+                  <span className="inline-flex items-center gap-1.5 text-[9px] font-medium">
+                    <span className="h-1 w-1 rounded-full bg-mint-300" />
+                    کلینیک تخصصی لبخند
+                  </span>
+                  <span className="text-[8px] text-white/70">
+                    لمینت · ایمپلنت
+                  </span>
+                </div>
               </div>
             </div>
 
-            <div className="absolute right-3 top-4 flex items-center gap-2 rounded-xl border border-line bg-white/95 px-3 py-2 shadow-float backdrop-blur sm:right-4 sm:top-5">
-              <span className="grid h-7 w-7 place-items-center rounded-lg bg-mint-100 text-mint-700">
-                <Icon name="calendar" className="h-3.5 w-3.5" />
+            <div className="glass absolute -right-2 top-7 flex items-center gap-2.5 rounded-2xl px-3.5 py-2.5 sm:right-0">
+              <span className="grid h-8 w-8 place-items-center rounded-xl bg-mint-100 text-mint-700">
+                <Icon name="calendar" className="h-4 w-4" />
               </span>
               <span>
                 <b className="block text-[10px] font-bold text-ink">
                   نوبت آزاد
                 </b>
-                <span className="block text-[8px] text-muted">
-                  امروز، ساعت ۱۷:۳۰
+                <span className="mt-0.5 flex items-center gap-1.5 text-[8px] text-muted">
+                  امروز، ۱۷:۳۰
+                  <span className="h-1 w-1 rounded-full bg-mint-500" />
                 </span>
               </span>
             </div>
 
-            <div className="absolute -left-2 bottom-5 rounded-xl border border-line bg-white/95 px-3.5 py-2.5 shadow-float backdrop-blur sm:-left-3 sm:bottom-7">
-              <b className="block text-lg font-extrabold leading-none text-ink">
-                ۴.۹
-              </b>
-              <span className="mt-1 block text-amber-400 text-[9px]">
-                ★★★★★
-              </span>
-              <span className="mt-0.5 block text-[8px] text-muted">
+            <div className="glass absolute -left-3 bottom-10 rounded-2xl px-4 py-3 sm:-left-6">
+              <div className="flex items-center gap-2">
+                <b className="text-xl font-black leading-none text-ink">
+                  ۴.۹
+                </b>
+                <span className="text-[9px] text-amber-400">★★★★★</span>
+              </div>
+              <span className="mt-1.5 block text-[8px] text-muted">
                 رضایت بیماران
               </span>
+              <span className="mt-2 block h-1 w-full overflow-hidden rounded-full bg-line">
+                <span className="block h-full w-[96%] rounded-full bg-gradient-to-l from-brand-500 to-mint-400" />
+              </span>
+            </div>
+
+            <div className="absolute -bottom-5 right-6 hidden items-center gap-1.5 rounded-full border border-white/70 bg-white/80 px-3 py-1.5 text-[8px] font-medium text-muted shadow-card backdrop-blur sm:flex">
+              <Icon name="shield" className="h-3 w-3 text-mint-600" />
+              گارانتی ۱۰ ساله ایمپلنت
             </div>
           </div>
+        </div>
+
+        <div className="pointer-events-none absolute bottom-6 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-1.5 text-muted/70 lg:flex">
+          <span className="text-[8px] tracking-[0.2em]">SCROLL</span>
+          <Icon name="arrowDown" className="h-3.5 w-3.5 animate-bounce" />
         </div>
       </section>
 
       {/* Feature strip */}
-      <section className="container-x relative z-10 -mt-1">
-        <div className="grid gap-3 md:grid-cols-3">
-          {features.map((feature) => (
+      <section className="container-x relative z-10 -mt-14 sm:-mt-16">
+        <div className="glass grid overflow-hidden rounded-[1.6rem] sm:grid-cols-3 sm:divide-x sm:divide-line/70 sm:rtl:divide-x-reverse">
+          {features.map((feature, index) => (
             <div
               key={feature.title}
-              className="flex items-start gap-3 rounded-2xl border border-line bg-white p-4 shadow-card"
+              className="group flex items-start gap-3.5 p-5 transition duration-300 hover:bg-white/60 sm:p-6"
             >
               <span
-                className={`grid h-10 w-10 shrink-0 place-items-center rounded-xl ${
+                className={`grid h-11 w-11 shrink-0 place-items-center rounded-2xl ring-1 transition duration-500 group-hover:scale-105 ${
                   feature.tone === "mint"
-                    ? "bg-mint-50 text-mint-700"
-                    : "bg-brand-50 text-brand-600"
+                    ? "bg-gradient-to-br from-mint-100 to-white text-mint-700 ring-mint-200/70"
+                    : "bg-gradient-to-br from-brand-100 to-white text-brand-600 ring-brand-200/70"
                 }`}
               >
                 <Icon name={feature.icon} className="h-5 w-5" />
               </span>
               <span>
-                <b className="block text-[11px] font-bold text-ink">
-                  {feature.title}
-                </b>
-                <span className="mt-1 block text-[9.5px] leading-5 text-muted">
+                <span className="flex items-center gap-2">
+                  <b className="block text-[12px] font-bold text-ink">
+                    {feature.title}
+                  </b>
+                  <span className="text-[8px] font-semibold tabular-nums text-muted/60">
+                    ۰{index + 1}
+                  </span>
+                </span>
+                <span className="mt-1 block text-[10px] leading-6 text-muted">
                   {feature.text}
                 </span>
               </span>
@@ -205,12 +312,37 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Marquee */}
+      <div
+        aria-hidden="true"
+        className="mt-12 border-y border-line/70 bg-white/50 py-4 backdrop-blur-sm"
+      >
+        <div className="marquee-mask overflow-hidden" dir="ltr">
+          <div className="marquee-track flex w-max items-center" dir="ltr">
+            {[0, 1].map((copy) => (
+              <div key={copy} className="flex items-center">
+                {marqueeItems.map((item) => (
+                  <span
+                    key={`${copy}-${item}`}
+                    className="flex items-center gap-3 pe-10 text-[11px] font-semibold text-ink-soft/75"
+                  >
+                    <span className="h-1 w-1 rounded-full bg-brand-400" />
+                    {item}
+                  </span>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
       {/* Services */}
       <section className="section" id="services">
         <div className="container-x">
           <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
             <SectionHeading
               eyebrow="خدمات"
+              index="۰۱"
               title="هر درمان، یک مسیر روشن."
               description="از پیشگیری تا ایمپلنت و طراحی لبخند؛ با معاینه دقیق و پلن شفاف، مناسب شرایط شما."
             />
@@ -238,6 +370,7 @@ export default function HomePage() {
           <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <SectionHeading
               eyebrow="نتایج"
+              index="۰۲"
               title="تفاوت را ببین."
               description="یک نمونه واقعی از تغییر رنگ دندان‌ها؛ اسلایدر را بکش و قبل و بعد را مقایسه کن."
             />
@@ -270,9 +403,9 @@ export default function HomePage() {
       {/* Doctor */}
       <section className="section">
         <div className="container-x">
-          <div className="overflow-hidden rounded-[1.75rem] border border-line bg-white shadow-soft">
+          <div className="overflow-hidden rounded-[2rem] border border-white/70 bg-white/85 shadow-soft backdrop-blur-sm">
             <div className="grid md:grid-cols-[0.85fr_1.15fr]">
-              <div className="relative min-h-[320px] bg-sky md:min-h-[400px]">
+              <div className="relative min-h-[320px] bg-sky md:min-h-[420px]">
                 <Image
                   src="/images/doctor.jpg"
                   alt="دکتر آرمان رضایی، بنیان‌گذار کلینیک آرمان"
@@ -280,18 +413,32 @@ export default function HomePage() {
                   sizes="(min-width: 1024px) 40vw, 100vw"
                   className="object-cover object-[50%_20%]"
                 />
-                <div className="absolute bottom-4 right-4 rounded-xl border border-line bg-white/90 px-3 py-2 text-[9px] backdrop-blur">
-                  <b className="block text-[12px] text-ink">۱۸ سال</b>
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand-900/45 via-brand-900/5 to-transparent" />
+                <div className="absolute bottom-4 right-4 rounded-2xl border border-white/25 bg-white/85 px-3.5 py-2.5 text-[9px] shadow-card backdrop-blur">
+                  <b className="block text-[13px] font-extrabold text-ink">
+                    ۱۸ سال
+                  </b>
                   تجربه بالینی
                 </div>
+                <span className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full border border-white/25 bg-brand-900/25 px-3 py-1.5 text-[8px] font-medium text-white backdrop-blur-md">
+                  <span className="h-1 w-1 rounded-full bg-mint-300" />
+                  هیئت علمی و مدرس دوره‌های ایمپلنت
+                </span>
               </div>
 
-              <div className="p-6 sm:p-8">
-                <span className="eyebrow">تیم درمان</span>
-                <h2 className="mt-3 text-[clamp(1.7rem,3vw,2.3rem)] font-extrabold leading-[1.22] tracking-[-0.04em] text-ink">
+              <div className="relative p-6 sm:p-9">
+                <span className="pointer-events-none absolute left-6 top-5 hidden text-[5rem] font-black leading-none text-brand-900/[0.04] lg:block">
+                  ۰۳
+                </span>
+                <span className="inline-flex items-center gap-2.5 text-[10px] font-bold tracking-[0.08em] text-brand-600">
+                  <span className="tabular-nums text-brand-400">۰۳</span>
+                  <span className="h-px w-7 bg-gradient-to-r from-brand-600 to-brand-300" />
+                  تیم درمان
+                </span>
+                <h2 className="mt-4 text-[clamp(1.8rem,3.2vw,2.5rem)] font-black leading-[1.18] tracking-[-0.045em] text-ink">
                   {doctors[0].name}
                 </h2>
-                <p className="mt-1.5 text-[11px] font-semibold text-brand-600">
+                <p className="mt-2 text-[11px] font-semibold text-brand-600">
                   {doctors[0].role}
                 </p>
                 <p className="mt-4 max-w-lg text-[12px] leading-7 text-muted">
@@ -306,7 +453,7 @@ export default function HomePage() {
                   ))}
                 </div>
 
-                <ul className="mt-4 grid gap-2">
+                <ul className="mt-5 grid gap-2.5 border-t border-line/80 pt-4">
                   {[
                     "دکترای دندانپزشکی — دانشگاه علوم پزشکی تهران",
                     "فلوشیپ ایمپلنتولوژی — دانشگاه فرایبورگ آلمان",
@@ -324,7 +471,7 @@ export default function HomePage() {
                   ))}
                 </ul>
 
-                <div className="mt-5 flex flex-wrap items-center gap-3">
+                <div className="mt-6 flex flex-wrap items-center gap-3">
                   <Link href="/about" className="btn btn-primary btn-sm">
                     درباره دکتر
                     <Icon name="arrowLeft" className="h-3.5 w-3.5" />
@@ -345,6 +492,7 @@ export default function HomePage() {
           <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <SectionHeading
               eyebrow="تجربه بیماران"
+              index="۰۴"
               title="چیزی که بیماران می‌گویند."
             />
             <p className="flex items-center gap-2 text-[10px] text-muted">
@@ -370,6 +518,7 @@ export default function HomePage() {
           <div className="md:col-span-4">
             <SectionHeading
               eyebrow="سؤالات"
+              index="۰۵"
               title="هر چیزی که باید بدانی."
               description="اگر پاسخ سوالت را پیدا نکردی، تیم پذیرش آماده کمک است."
             />

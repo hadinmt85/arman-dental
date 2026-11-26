@@ -127,7 +127,7 @@ function MapArt() {
         </g>
       </svg>
 
-      <div className="absolute inset-x-3 bottom-3 rounded-xl border border-line bg-white/95 p-4 backdrop-blur sm:inset-x-4 sm:bottom-4">
+      <div className="absolute inset-x-3 bottom-3 rounded-xl border border-white/75 bg-white/85 backdrop-blur-sm/95 p-4 backdrop-blur sm:inset-x-4 sm:bottom-4">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div>
             <p className="text-[9px] text-muted">کلینیک دندانپزشکی آرمان</p>
@@ -147,7 +147,7 @@ function MapArt() {
         </div>
       </div>
 
-      <span className="absolute right-3 top-3 inline-flex items-center gap-1.5 rounded-full border border-line bg-white/90 px-2.5 py-1.5 text-[9px] font-medium text-ink backdrop-blur sm:right-4 sm:top-4">
+      <span className="absolute right-3 top-3 inline-flex items-center gap-1.5 rounded-full border border-white/75 bg-white/85 backdrop-blur-sm/90 px-2.5 py-1.5 text-[9px] font-medium text-ink backdrop-blur sm:right-4 sm:top-4">
         <span className="h-1.5 w-1.5 rounded-full bg-brand-600" />
         سعادت‌آباد
       </span>
@@ -186,7 +186,7 @@ export default function ContactPage() {
           {infoCards.map((card) => (
             <div
               key={card.label}
-              className="rounded-2xl border border-line bg-white p-4 shadow-card"
+              className="rounded-2xl border border-white/75 bg-white/85 backdrop-blur-sm p-4 shadow-card"
             >
               <span className="grid h-9 w-9 place-items-center rounded-xl bg-brand-50 text-brand-600">
                 <Icon name={card.icon} className="h-4 w-4" />
@@ -225,7 +225,7 @@ export default function ContactPage() {
           <div className="flex flex-col gap-4">
             <MapArt />
 
-            <div className="rounded-2xl border border-line bg-white p-5 shadow-card">
+            <div className="rounded-2xl border border-white/75 bg-white/85 backdrop-blur-sm p-5 shadow-card">
               <h2 className="text-[12px] font-bold text-ink">
                 راه‌های دسترسی
               </h2>

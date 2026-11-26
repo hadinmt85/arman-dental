@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 
 type SectionHeadingProps = {
   eyebrow?: string;
+  index?: string;
   title: ReactNode;
   description?: ReactNode;
   align?: "center" | "start";
@@ -11,6 +12,7 @@ type SectionHeadingProps = {
 
 export function SectionHeading({
   eyebrow,
+  index,
   title,
   description,
   align = "start",
@@ -24,12 +26,30 @@ export function SectionHeading({
       } ${className}`}
     >
       {eyebrow ? (
-        <span className={`eyebrow ${light ? "eyebrow-light" : ""}`}>
-          {eyebrow}
-        </span>
+        index ? (
+          <span
+            className={`inline-flex items-center gap-2.5 text-[10px] font-bold tracking-[0.08em] ${
+              light ? "text-white/70" : "text-brand-600"
+            }`}
+          >
+            <span className="tabular-nums text-brand-400">{index}</span>
+            <span
+              className={`h-px w-7 ${
+                light
+                  ? "bg-gradient-to-r from-white/70 to-white/10"
+                  : "bg-gradient-to-r from-brand-600 to-brand-300"
+              }`}
+            />
+            {eyebrow}
+          </span>
+        ) : (
+          <span className={`eyebrow ${light ? "eyebrow-light" : ""}`}>
+            {eyebrow}
+          </span>
+        )
       ) : null}
       <h2
-        className={`mt-3 text-[clamp(1.75rem,3.4vw,2.55rem)] font-extrabold leading-[1.25] tracking-[-0.045em] ${
+        className={`mt-4 text-[clamp(1.9rem,3.8vw,2.9rem)] font-black leading-[1.16] tracking-[-0.05em] ${
           light ? "text-white" : "text-ink"
         }`}
       >
@@ -37,7 +57,7 @@ export function SectionHeading({
       </h2>
       {description ? (
         <p
-          className={`mt-3 max-w-lg text-xs leading-7 sm:text-[13px] ${
+          className={`mt-4 max-w-lg text-xs leading-7 sm:text-[13px] ${
             light ? "text-white/70" : "text-muted"
           }`}
         >

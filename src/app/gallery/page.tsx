@@ -56,7 +56,7 @@ export default function GalleryPage() {
             </span>
           </div>
 
-          <div className="rounded-[1.75rem] border border-line bg-white p-2.5 shadow-soft">
+          <div className="rounded-[1.75rem] border border-white/75 bg-white/85 backdrop-blur-sm p-2.5 shadow-soft">
             <BeforeAfter
               src="/images/smile.jpg"
               alt="مقایسه قبل و بعد بلیچینگ دندان"
@@ -82,11 +82,11 @@ export default function GalleryPage() {
             </div>
 
             <dl className="grid grid-cols-2 gap-3 self-start">
-              <div className="rounded-xl border border-line bg-white p-3.5">
+              <div className="rounded-xl border border-white/75 bg-white/85 backdrop-blur-sm p-3.5">
                 <dt className="text-[9px] text-muted">مدت درمان</dt>
                 <dd className="mt-1 text-[12px] font-bold text-ink">۶۰ دقیقه</dd>
               </div>
-              <div className="rounded-xl border border-line bg-white p-3.5">
+              <div className="rounded-xl border border-white/75 bg-white/85 backdrop-blur-sm p-3.5">
                 <dt className="text-[9px] text-muted">تعداد جلسات</dt>
                 <dd className="mt-1 text-[12px] font-bold text-ink">۱ جلسه</dd>
               </div>
@@ -105,6 +105,7 @@ export default function GalleryPage() {
         <div className="container-x section">
           <SectionHeading
             eyebrow="شفافیت"
+            index="۰۱"
             title="چرا نمونه‌های ما قابل اعتمادند؟"
             description="هر نتیجه درمان به شرایط اولیه دهان، همکاری بیمار و مراقبت‌های بعدی بستگی دارد. ما این واقعیت را پنهان نمی‌کنیم."
           />

@@ -45,11 +45,11 @@ export default function AppointmentPage() {
       </PageHero>
 
       <section className="section">
-        <div className="container-x grid gap-8 min-[900px]:grid-cols-[1.55fr_1fr] min-[900px]:items-start">
+        <div className="container-x grid min-w-0 grid-cols-1 gap-8 min-[900px]:grid-cols-[minmax(0,1.55fr)_minmax(0,1fr)] min-[900px]:items-start">
           <AppointmentForm />
 
-          <aside className="space-y-8 min-[900px]:sticky min-[900px]:top-28">
-            <div className="rounded-2xl border border-line bg-white p-5 shadow-card">
+          <aside className="min-w-0 space-y-8 min-[900px]:sticky min-[900px]:top-28">
+            <div className="rounded-2xl border border-white/75 bg-white/85 backdrop-blur-sm p-5 shadow-card">
               <h2 className="text-sm font-bold text-ink">چرا آنلاین؟</h2>
               <ul className="mt-4 space-y-4">
                 {benefits.map((benefit) => (
@@ -89,7 +89,7 @@ export default function AppointmentPage() {
               </div>
             </div>
 
-            <div className="rounded-2xl border border-line bg-white p-5 text-[10px] leading-5 text-muted">
+            <div className="rounded-2xl border border-white/75 bg-white/85 backdrop-blur-sm p-5 text-[10px] leading-5 text-muted">
               <span className="flex items-center gap-1.5 font-semibold text-ink">
                 <Icon name="info" className="h-3.5 w-3.5 text-brand-600" />
                 نسخه نمایشی

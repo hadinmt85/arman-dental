@@ -183,7 +183,7 @@ export function AppointmentForm() {
 
   if (booking) {
     return (
-      <div className="rounded-2xl border border-line bg-white shadow-card p-6 sm:p-10">
+      <div className="rounded-2xl border border-white/75 bg-white/85 backdrop-blur-sm shadow-card p-6 sm:p-10">
         <div className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-mint-100 text-mint-700">
           <Icon name="checkCircle" className="h-7 w-7" />
         </div>
@@ -244,9 +244,9 @@ export function AppointmentForm() {
   }
 
   return (
-    <div className="space-y-4">
-      <div className="rounded-2xl border border-line bg-white shadow-card p-6 sm:p-8">
-        <ol className="flex items-center gap-3">
+    <div className="min-w-0 space-y-4">
+      <div className="min-w-0 rounded-2xl border border-white/75 bg-white/85 backdrop-blur-sm shadow-card p-6 sm:p-8">
+        <ol className="flex min-w-0 items-center gap-3">
           {stepTitles.map((title, index) => {
             const number = index + 1;
             const isDone = step > number;
@@ -278,7 +278,7 @@ export function AppointmentForm() {
                 </span>
                 {index < stepTitles.length - 1 ? (
                   <span
-                    className={`hidden h-px flex-1 sm:block ${
+                    className={`h-px min-w-2 flex-1 ${
                       isDone ? "bg-brand-300" : "bg-line"
                     }`}
                   />
@@ -295,7 +295,7 @@ export function AppointmentForm() {
             if (step < 3) goNext();
             else submit();
           }}
-          className="mt-8"
+          className="mt-8 min-w-0"
         >
           {step === 1 ? (
             <div className="animate-fade">
@@ -415,7 +415,7 @@ export function AppointmentForm() {
                 جمعه‌ها کلینیک تعطیل است. ساعت‌های کم‌رنگ قابل انتخاب نیستند.
               </p>
 
-              <div className="mt-5 flex gap-2 overflow-x-auto pb-2 no-scrollbar">
+              <div className="mt-5 flex max-w-full min-w-0 gap-2 overflow-x-auto pb-2 no-scrollbar">
                 {!ready
                   ? Array.from({ length: 7 }).map((_, index) => (
                       <div
@@ -755,7 +755,7 @@ export function AppointmentForm() {
       </div>
 
       {ready && appointments.length > 0 ? (
-        <div className="rounded-2xl border border-line bg-white shadow-card p-6 sm:p-8">
+        <div className="rounded-2xl border border-white/75 bg-white/85 backdrop-blur-sm shadow-card p-6 sm:p-8">
           <div className="flex items-center justify-between gap-3">
             <h2 className="text-sm font-bold text-ink">نوبت‌های من</h2>
             <span className="chip">{faDigits(appointments.length)} نوبت</span>
@@ -822,7 +822,7 @@ export function AppointmentForm() {
         </div>
       ) : null}
 
-      <div className="rounded-2xl border border-line bg-white shadow-card p-6 sm:p-8">
+      <div className="rounded-2xl border border-white/75 bg-white/85 backdrop-blur-sm shadow-card p-6 sm:p-8">
         <div className="flex items-center gap-2">
           <Icon name="info" className="h-4 w-4 text-brand-600" />
           <h2 className="text-sm font-bold text-ink">
