@@ -31,7 +31,7 @@ export function FaqAccordion({ items }: { items: FaqItem[] }) {
             >
               <span
                 className={`text-[9px] font-bold tabular-nums transition ${
-                  isOpen ? "text-brand-600" : "text-muted/50"
+                  isOpen ? "text-brand-600" : "text-muted"
                 }`}
               >
                 {faDigits(String(index + 1).padStart(2, "0"))}

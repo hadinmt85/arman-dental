@@ -444,7 +444,7 @@ export function AppointmentForm() {
                         >
                           <span
                             className={`block text-[10px] ${
-                              selected ? "text-white/60" : "text-muted"
+                              selected ? "text-white/85" : "text-muted"
                             }`}
                           >
                             {day.relative || day.weekday}
@@ -454,7 +454,7 @@ export function AppointmentForm() {
                           </span>
                           <span
                             className={`mt-0.5 block text-[9px] ${
-                              selected ? "text-white/55" : "text-muted"
+                              selected ? "text-white/80" : "text-muted"
                             }`}
                           >
                             {day.month}

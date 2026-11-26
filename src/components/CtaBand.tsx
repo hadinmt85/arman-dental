@@ -44,7 +44,7 @@ export function CtaBand({
               {perks.map((perk) => (
                 <li
                   key={perk}
-                  className="inline-flex items-center gap-1.5 text-[9px] text-white/65"
+                  className="inline-flex items-center gap-1.5 text-[9px] text-white/80"
                 >
                   <Icon name="check" className="h-3 w-3 text-mint-300" />
                   {perk}
@@ -65,7 +65,7 @@ export function CtaBand({
             >
               {site.phone}
             </a>
-            <span className="mt-1 flex items-center justify-center gap-1.5 text-[8px] text-white/50">
+            <span className="mt-1 flex items-center justify-center gap-1.5 text-[8px] text-white/75">
               <span className="h-1 w-1 rounded-full bg-mint-300" />
               پاسخ‌گویی در ساعات کاری کلینیک
             </span>

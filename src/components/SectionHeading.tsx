@@ -32,7 +32,7 @@ export function SectionHeading({
               light ? "text-white/70" : "text-brand-600"
             }`}
           >
-            <span className="tabular-nums text-brand-400">{index}</span>
+            <span className="tabular-nums text-brand-600">{index}</span>
             <span
               className={`h-px w-7 ${
                 light

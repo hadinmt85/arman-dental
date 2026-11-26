@@ -63,7 +63,7 @@ export function Footer() {
               ))}
             </div>
 
-            <p className="mt-6 text-[8px] font-medium tracking-[0.32em] text-muted/60">
+            <p className="mt-6 text-[8px] font-medium tracking-[0.32em] text-muted">
               ARMAN DENTAL CLINIC
             </p>
           </div>
@@ -142,7 +142,7 @@ export function Footer() {
         <div className="mt-12 flex flex-col gap-3 border-t border-line/80 pt-6 text-[10px] text-muted sm:flex-row sm:items-center sm:justify-between">
           <p>© ۱۴۰۵ کلینیک دندانپزشکی آرمان — تمامی حقوق محفوظ است.</p>
           <div className="flex items-center gap-4">
-            <span className="hidden text-[8px] tracking-[0.24em] text-muted/60 sm:block">
+            <span className="hidden text-[8px] tracking-[0.24em] text-muted sm:block">
               ۱۸ YEARS OF CARE
             </span>
             <a

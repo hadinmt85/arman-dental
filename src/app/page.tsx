@@ -299,7 +299,7 @@ export default function HomePage() {
                   <b className="block text-[12px] font-bold text-ink">
                     {feature.title}
                   </b>
-                  <span className="text-[8px] font-semibold tabular-nums text-muted/60">
+                  <span className="text-[8px] font-semibold tabular-nums text-muted">
                     ۰{index + 1}
                   </span>
                 </span>
@@ -431,7 +431,7 @@ export default function HomePage() {
                   ۰۳
                 </span>
                 <span className="inline-flex items-center gap-2.5 text-[10px] font-bold tracking-[0.08em] text-brand-600">
-                  <span className="tabular-nums text-brand-400">۰۳</span>
+                  <span className="tabular-nums text-brand-600">۰۳</span>
                   <span className="h-px w-7 bg-gradient-to-r from-brand-600 to-brand-300" />
                   تیم درمان
                 </span>

@@ -319,7 +319,9 @@ export default function DesignLabPage() {
                   <span className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-brand-100 to-white text-brand-600 ring-1 ring-brand-200/60">
                     <Icon name={item.icon} className="h-4 w-4" />
                   </span>
-                  <span className="text-[9px] tabular-nums text-muted/60">
+                  <span
+                className={`text-[9px] tabular-nums text-muted`}
+              >
                     ۰{index + 1}
                   </span>
                 </div>
