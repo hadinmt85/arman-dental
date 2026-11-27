@@ -22,6 +22,12 @@ launch.
 | `services/pediatric.jpg` | [Pexels photo 8260438](https://www.pexels.com/photo/8260438/) | Pexels License |
 | `services/scaling.jpg` | [Pexels photo 7789675](https://www.pexels.com/photo/7789675/) | Pexels License |
 | `services/zirconia.jpg` | [Pexels photo 38362421](https://www.pexels.com/photo/38362421/) | Pexels License |
+| `hero-options/a.jpg` | [Pexels photo 11928560](https://www.pexels.com/photo/11928560/) | Pexels License |
+| `hero-options/b.jpg` | [Pexels photo 11928561](https://www.pexels.com/photo/11928561/) | Pexels License |
+| `hero-options/c.jpg` | [Pexels photo 4971500](https://www.pexels.com/photo/4971500/) | Pexels License |
+| `hero-options/d.jpg` | [Pexels photo 6627574](https://www.pexels.com/photo/6627574/) | Pexels License |
+| `hero-options/e.jpg` | [Pexels photo 6627476](https://www.pexels.com/photo/6627476/) | Pexels License |
+| `hero-options/f.jpg` | [Pexels photo 4971503](https://www.pexels.com/photo/4971503/) | Pexels License |
 
 `hero.jpg` is kept only for the archived design mockups under `public/mockups/`.
 

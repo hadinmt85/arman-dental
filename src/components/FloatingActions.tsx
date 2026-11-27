@@ -1,10 +1,12 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Icon } from "./Icon";
 import { site } from "@/lib/site";
 
 export function FloatingActions() {
+  const pathname = usePathname();
   const [showTop, setShowTop] = useState(false);
 
   useEffect(() => {
@@ -13,6 +15,8 @@ export function FloatingActions() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  if (pathname.endsWith("-lab")) return null;
 
   return (
     <div className="pointer-events-none fixed inset-x-0 bottom-4 z-40 sm:bottom-6">
