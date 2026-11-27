@@ -25,7 +25,6 @@ const options: Option[] = [
     position: "30% 45%",
     mobilePosition: "35% 50%",
     source: "Pexels 11928560",
-    recommended: true,
   },
   {
     code: "B",
@@ -51,8 +50,9 @@ const options: Option[] = [
     note: "لحظهٔ دیدن نتیجهٔ درمان؛ شاد و روشن، مناسب پیام «لبخند نهایی».",
     image: "/images/hero-options/d.jpg",
     position: "72% 36%",
-    mobilePosition: "65% 40%",
+    mobilePosition: "78% 40%",
     source: "Pexels 6627574",
+    recommended: true,
   },
   {
     code: "E",
@@ -75,7 +75,7 @@ const options: Option[] = [
 ];
 
 export function HeroOptionLab() {
-  const [active, setActive] = useState(options[0]);
+  const [active, setActive] = useState(options[3]);
   const previewRef = useRef<HTMLDivElement>(null);
 
   const select = (option: Option) => {
@@ -134,7 +134,7 @@ export function HeroOptionLab() {
                   </span>
                   {option.recommended ? (
                     <span className="absolute bottom-2 right-2 rounded-full bg-mint-500 px-2 py-0.5 text-[8px] font-bold text-brand-900">
-                      پیشنهاد
+                      انتخاب‌شده
                     </span>
                   ) : null}
                 </div>

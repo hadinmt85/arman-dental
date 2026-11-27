@@ -28,6 +28,7 @@ launch.
 | `hero-options/d.jpg` | [Pexels photo 6627574](https://www.pexels.com/photo/6627574/) | Pexels License |
 | `hero-options/e.jpg` | [Pexels photo 6627476](https://www.pexels.com/photo/6627476/) | Pexels License |
 | `hero-options/f.jpg` | [Pexels photo 4971503](https://www.pexels.com/photo/4971503/) | Pexels License |
+| `hero-d-portrait.jpg` | Crop of `hero-options/d.jpg` (Pexels 6627574) | Pexels License |
 
 `hero.jpg` is kept only for the archived design mockups under `public/mockups/`.
 

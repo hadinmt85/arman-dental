@@ -58,11 +58,11 @@ export default function HomePage() {
       />
 
       <Hero
-        image="/images/hero-green-portrait.jpg"
-        mobileImage="/images/hero-green.jpg"
-        alt="????? ????? ??? ????? ?????????? ?? ?????? ?????"
-        position="50% 32%"
-        mobilePosition="28% 50%"
+        image="/images/hero-d-portrait.jpg"
+        mobileImage="/images/hero-options/d.jpg"
+        alt="بیمار خندان با آینه در کلینیک دندانپزشکی آرمان"
+        position="50% 30%"
+        mobilePosition="78% 40%"
         priority
       />
 
