@@ -7,6 +7,8 @@ launch.
 | File | Source | License |
 | --- | --- | --- |
 | `hero-mint-clean.jpg` | [Pexels photo 3762441](https://www.pexels.com/photo/3762441/) | Pexels License |
+| `hero-green.jpg` | [Pexels photo 3881145](https://www.pexels.com/photo/3881145/) | Pexels License |
+| `hero-green-portrait.jpg` | Crop of `hero-green.jpg` | Pexels License |
 | `hero.jpg` | [Pexels photo 1858175](https://www.pexels.com/photo/1858175/) | Pexels License |
 | `smile.jpg` | [Pexels photo 3762453](https://www.pexels.com/photo/3762453/) | Pexels License |
 | `care.jpg` | [Pexels photo 3845983](https://www.pexels.com/photo/3845983/) | Pexels License |

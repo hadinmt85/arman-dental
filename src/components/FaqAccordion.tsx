@@ -13,7 +13,7 @@ export function FaqAccordion({ items }: { items: FaqItem[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <div className="overflow-hidden rounded-[1.6rem] border border-white/75 bg-white/85 shadow-card backdrop-blur-sm">
+    <div className="overflow-hidden rounded-[1.6rem] border border-line/80 bg-surface/95 backdrop-blur-sm">
       {items.map((item, index) => {
         const isOpen = openIndex === index;
 

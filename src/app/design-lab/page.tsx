@@ -14,12 +14,12 @@ export const metadata: Metadata = {
 };
 
 const palette = [
-  { name: "Brand 600", hex: "#1E4FD8", className: "bg-brand-600", text: "text-white" },
-  { name: "Brand 900", hex: "#0B2A45", className: "bg-brand-900", text: "text-white" },
-  { name: "Mint 500", hex: "#18B480", className: "bg-mint-500", text: "text-white" },
-  { name: "Paper", hex: "#F2F7FC", className: "bg-paper", text: "text-ink" },
-  { name: "Ink", hex: "#0E1B2C", className: "bg-ink", text: "text-white" },
-  { name: "Line", hex: "#DFE8F2", className: "bg-line", text: "text-ink" },
+  { name: "Green 600", hex: "#356047", className: "bg-brand-600", text: "text-white" },
+  { name: "Green 900", hex: "#173026", className: "bg-brand-900", text: "text-white" },
+  { name: "Gold 500", hex: "#C9A45A", className: "bg-mint-500", text: "text-white" },
+  { name: "Paper", hex: "#F4EFE4", className: "bg-paper", text: "text-ink" },
+  { name: "Ink", hex: "#1B3A2F", className: "bg-ink", text: "text-white" },
+  { name: "Line", hex: "#E6DBC7", className: "bg-line", text: "text-ink" },
 ];
 
 const upgrades = [
@@ -58,24 +58,24 @@ const upgrades = [
 export default function DesignLabPage() {
   return (
     <div className="bg-paper">
-      <section className="relative isolate overflow-hidden border-b border-white/70 bg-hero">
+      <section className="relative isolate overflow-hidden border-b border-line/70 bg-hero">
         <div className="pointer-events-none absolute inset-0 bg-grid-soft opacity-70" />
         <div className="pointer-events-none absolute -left-24 top-8 h-64 w-64 rounded-full bg-brand-200/35 blur-3xl" />
         <div className="pointer-events-none absolute -right-20 bottom-0 h-64 w-64 rounded-full bg-mint-200/40 blur-3xl" />
 
         <div className="container-x relative pb-14 pt-12 sm:pb-16 sm:pt-16">
-          <span className="eyebrow">Design Lab / Version 2</span>
+          <span className="eyebrow">Design Lab / Version 3</span>
           <h1 className="mt-5 max-w-3xl text-[clamp(2.4rem,5.4vw,4.3rem)] font-black leading-[1.06] tracking-[-0.055em] text-ink">
             سیستم طراحی
             <span className="text-gradient block">آرمان.</span>
           </h1>
           <p className="mt-5 max-w-xl text-[13px] leading-8 text-muted">
-            همان پالت آبی و مینت، با لایه‌بندی دقیق‌تر، تایپوگرافی بزرگ‌تر و
-            جزئیات شیشه‌ای. این صفحه مرجع بصری نسخهٔ دوم است؛ همهٔ اجزا از
+            پالت کرم، سبز تیره و طلایی مرجع، با لایه‌بندی دقیق‌تر، تایپوگرافی
+            بزرگ‌تر و جزئیات نرم. این صفحه مرجع بصری نسخهٔ سوم است؛ همهٔ اجزا از
             کامپوننت‌های واقعی سایت استفاده می‌کنند.
           </p>
           <div className="mt-6 flex flex-wrap gap-2">
-            <span className="chip">پالت بدون تغییر</span>
+            <span className="chip">پالت مرجع</span>
             <span className="chip">RTL و فارسی</span>
             <span className="chip">Lighthouse 100</span>
             <span className="chip">Next.js + Tailwind</span>
@@ -85,7 +85,7 @@ export default function DesignLabPage() {
 
       <section className="container-x py-14 sm:py-16">
         <div className="grid gap-4 lg:grid-cols-12">
-          <div className="rounded-[1.75rem] border border-white/75 bg-white/85 p-6 shadow-card backdrop-blur-sm lg:col-span-7">
+          <div className="rounded-[1.75rem] border border-line/80 bg-surface/90 p-6 shadow-card backdrop-blur-sm lg:col-span-7">
             <span className="eyebrow">۰۱ / پالت رنگ</span>
             <div className="mt-5 grid grid-cols-2 gap-2.5 sm:grid-cols-3">
               {palette.map((color) => (
@@ -103,12 +103,12 @@ export default function DesignLabPage() {
               ))}
             </div>
             <p className="mt-4 text-[10px] leading-6 text-muted">
-              رنگ اصلی برند و مینت پشتیبان دست‌نخورده مانده‌اند؛ تغییرات در
-              عمق، بافت و سلسله‌مراتب بصری است، نه در هویت رنگی.
+              کرم گرم، سبز تیره و طلایی؛ سه لایهٔ رنگی که عمق، گرما و اعتماد را
+              هم‌زمان منتقل می‌کنند.
             </p>
           </div>
 
-          <div className="rounded-[1.75rem] border border-white/75 bg-white/85 p-6 shadow-card backdrop-blur-sm lg:col-span-5">
+          <div className="rounded-[1.75rem] border border-line/80 bg-surface/90 p-6 shadow-card backdrop-blur-sm lg:col-span-5">
             <span className="eyebrow">۰۲ / تایپوگرافی</span>
             <p className="mt-5 text-[clamp(1.8rem,3.6vw,2.6rem)] font-black leading-[1.12] tracking-[-0.05em] text-ink">
               لبخندی که
@@ -132,7 +132,7 @@ export default function DesignLabPage() {
       </section>
 
       <section className="container-x pb-14 sm:pb-16">
-        <div className="rounded-[1.75rem] border border-white/75 bg-white/85 p-6 shadow-card backdrop-blur-sm sm:p-8">
+        <div className="rounded-[1.75rem] border border-line/80 bg-surface/90 p-6 shadow-card backdrop-blur-sm sm:p-8">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <span className="eyebrow">۰۳ / اجزای رابط</span>
@@ -245,7 +245,7 @@ export default function DesignLabPage() {
                 <div className="relative">
                   <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-white/80 bg-sky shadow-card">
                     <Image
-                      src="/images/hero-mint-clean.jpg"
+                      src="/images/hero-green.jpg"
                       alt="پیش‌نمایش تصویر هیرو"
                       fill
                       sizes="(min-width: 1024px) 260px, 50vw"
@@ -260,7 +260,7 @@ export default function DesignLabPage() {
             </div>
           </div>
 
-          <div className="rounded-[1.75rem] border border-white/75 bg-white/85 p-6 shadow-card backdrop-blur-sm lg:col-span-4">
+          <div className="rounded-[1.75rem] border border-line/80 bg-surface/90 p-6 shadow-card backdrop-blur-sm lg:col-span-4">
             <span className="eyebrow">۰۵ / حرکت</span>
             <ul className="mt-5 space-y-4">
               {[
@@ -294,7 +294,7 @@ export default function DesignLabPage() {
         </div>
       </section>
 
-      <section className="border-y border-line/70 bg-white/60">
+      <section className="border-y border-line/70 bg-surface/60">
         <div className="container-x py-14 sm:py-16">
           <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
             <div>

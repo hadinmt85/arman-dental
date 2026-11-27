@@ -84,7 +84,7 @@ export default function AboutPage() {
       </PageHero>
 
       <section className="container-x pt-8">
-        <div className="overflow-hidden rounded-[1.75rem] border border-white/75 bg-white/85 backdrop-blur-sm shadow-soft">
+        <div className="overflow-hidden rounded-[1.75rem] border border-line/80 bg-surface/90 backdrop-blur-sm shadow-soft">
           <div className="grid md:grid-cols-[0.85fr_1.15fr]">
             <div className="relative min-h-[340px] bg-sky md:min-h-[520px]">
               <Image
@@ -95,7 +95,7 @@ export default function AboutPage() {
                 sizes="(min-width: 1024px) 40vw, 100vw"
                 className="object-cover object-[50%_20%]"
               />
-              <div className="absolute bottom-4 right-4 rounded-xl border border-white/75 bg-white/85 backdrop-blur-sm/90 px-3 py-2 text-[9px] backdrop-blur">
+              <div className="absolute bottom-4 right-4 rounded-xl border border-line/80 bg-surface/90 backdrop-blur px-3 py-2 text-[9px] backdrop-blur">
                 <b className="block text-[12px] text-ink">۱۸ سال</b>
                 تجربه بالینی
               </div>
@@ -170,7 +170,7 @@ export default function AboutPage() {
             {stats.map((stat) => (
               <div
                 key={stat.label}
-                className="rounded-2xl border border-white/75 bg-white/85 backdrop-blur-sm p-5 text-center shadow-card"
+                className="rounded-2xl border border-line/80 bg-surface/90 backdrop-blur-sm p-5 text-center shadow-card"
               >
                 <p className="text-2xl font-extrabold tracking-tight text-brand-600 sm:text-3xl">
                   {stat.value}
@@ -191,7 +191,7 @@ export default function AboutPage() {
             </div>
 
             <div className="md:col-span-8">
-              <ol className="overflow-hidden rounded-2xl border border-white/75 bg-white/85 backdrop-blur-sm shadow-card">
+              <ol className="overflow-hidden rounded-2xl border border-line/80 bg-surface/90 backdrop-blur-sm shadow-card">
                 {timeline.map((item) => (
                   <li
                     key={item.year}
@@ -214,7 +214,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="border-y border-line bg-white">
+      <section className="border-y border-line/70 bg-surface/60">
         <div className="container-x section">
           <div className="grid gap-8 md:grid-cols-12 md:items-center">
             <div className="md:col-span-5">
@@ -272,7 +272,7 @@ export default function AboutPage() {
             {doctors.map((member) => (
               <div
                 key={member.id}
-                className="flex flex-col gap-4 rounded-2xl border border-white/75 bg-white/85 backdrop-blur-sm p-5 shadow-card sm:flex-row sm:items-start"
+                className="flex flex-col gap-4 rounded-2xl border border-line/80 bg-surface/90 backdrop-blur-sm p-5 shadow-card sm:flex-row sm:items-start"
               >
                 <span className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-brand-50 text-lg font-extrabold text-brand-700">
                   {member.name.replace("دکتر ", "").charAt(0)}

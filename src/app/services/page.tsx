@@ -58,7 +58,7 @@ export default function ServicesPage() {
           {assurances.map((item) => (
             <div
               key={item.title}
-              className="flex items-start gap-3 rounded-2xl border border-white/75 bg-white/80 p-4 shadow-card backdrop-blur-sm"
+              className="flex items-start gap-3 rounded-2xl border border-line/80 bg-surface/90 p-4 shadow-card backdrop-blur-sm"
             >
               <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-brand-50 text-brand-600">
                 <Icon name={item.icon} className="h-5 w-5" />
@@ -104,7 +104,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="border-y border-line bg-white">
+      <section className="border-y border-line/70 bg-surface/60">
         <div className="container-x section">
           <SectionHeading
             eyebrow="مسیر درمان"
@@ -117,9 +117,9 @@ export default function ServicesPage() {
             {processSteps.map((step) => (
               <div
                 key={step.step}
-                className="rounded-2xl border border-white/75 bg-white/80 p-5 shadow-card backdrop-blur-sm"
+                className="rounded-2xl border border-line/80 bg-surface/90 p-5 shadow-card backdrop-blur-sm"
               >
-                <span className="grid h-9 w-9 place-items-center rounded-xl bg-white text-[11px] font-bold text-brand-600 shadow-sm">
+                <span className="grid h-9 w-9 place-items-center rounded-xl bg-surface text-[11px] font-bold text-brand-700 shadow-sm">
                   {step.step}
                 </span>
                 <h3 className="mt-4 text-[13px] font-bold text-ink">

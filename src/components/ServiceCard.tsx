@@ -21,7 +21,7 @@ export function ServiceCard({
     <Link
       href={href}
       id={service.id}
-      className="group card-lift card-shine relative flex h-full scroll-mt-28 flex-col overflow-hidden rounded-[1.6rem] border border-white/75 bg-white/85 shadow-card backdrop-blur-sm hover:border-brand-200/80 hover:shadow-soft"
+      className="group card-lift card-shine relative flex h-full scroll-mt-28 flex-col overflow-hidden rounded-[1.6rem] border border-line/80 bg-surface/95 shadow-card backdrop-blur-sm hover:border-mint-300/70 hover:shadow-soft"
     >
       <div className="relative aspect-[16/10] w-full overflow-hidden bg-sky">
         <Image
@@ -32,7 +32,7 @@ export function ServiceCard({
           className="object-cover transition duration-700 ease-out group-hover:scale-[1.05]"
         />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand-900/25 via-transparent to-transparent" />
-        <span className="absolute left-3 top-3 grid h-7 min-w-7 place-items-center rounded-full border border-white/50 bg-white/80 px-2 text-[9px] font-bold tabular-nums text-ink backdrop-blur">
+        <span className="absolute left-3 top-3 grid h-7 min-w-7 place-items-center rounded-full border border-line/70 bg-surface/85 px-2 text-[9px] font-bold tabular-nums text-brand-900 backdrop-blur">
           {faDigits(String(index).padStart(2, "0"))}
         </span>
         <span className="absolute bottom-3 right-3 inline-flex items-center gap-1.5 rounded-full border border-white/25 bg-white/15 px-2.5 py-1 text-[8px] font-medium text-white backdrop-blur">
@@ -43,7 +43,7 @@ export function ServiceCard({
 
       <div className="relative flex flex-1 flex-col p-5">
         <div className="flex items-center justify-between">
-          <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-brand-100 to-white text-brand-600 ring-1 ring-brand-200/60 transition duration-500 group-hover:from-brand-600 group-hover:to-brand-700 group-hover:text-white group-hover:ring-brand-500/40">
+          <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-mint-100 to-surface text-brand-700 ring-1 ring-mint-200/70 transition duration-500 group-hover:from-brand-600 group-hover:to-brand-700 group-hover:text-white group-hover:ring-brand-500/40">
             <Icon name={service.icon} className="h-5 w-5" />
           </span>
           <span className="text-[9px] font-medium text-muted">

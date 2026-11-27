@@ -183,7 +183,7 @@ export function AppointmentForm() {
 
   if (booking) {
     return (
-      <div className="rounded-2xl border border-white/75 bg-white/85 backdrop-blur-sm shadow-card p-6 sm:p-10">
+      <div className="rounded-2xl border border-line/80 bg-surface/90 backdrop-blur-sm shadow-card p-6 sm:p-10">
         <div className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-mint-100 text-mint-700">
           <Icon name="checkCircle" className="h-7 w-7" />
         </div>
@@ -245,7 +245,7 @@ export function AppointmentForm() {
 
   return (
     <div className="min-w-0 space-y-4">
-      <div className="min-w-0 rounded-2xl border border-white/75 bg-white/85 backdrop-blur-sm shadow-card p-6 sm:p-8">
+      <div className="min-w-0 rounded-2xl border border-line/80 bg-surface/90 backdrop-blur-sm shadow-card p-6 sm:p-8">
         <ol className="flex min-w-0 items-center gap-3">
           {stepTitles.map((title, index) => {
             const number = index + 1;
@@ -755,7 +755,7 @@ export function AppointmentForm() {
       </div>
 
       {ready && appointments.length > 0 ? (
-        <div className="rounded-2xl border border-white/75 bg-white/85 backdrop-blur-sm shadow-card p-6 sm:p-8">
+        <div className="rounded-2xl border border-line/80 bg-surface/90 backdrop-blur-sm shadow-card p-6 sm:p-8">
           <div className="flex items-center justify-between gap-3">
             <h2 className="text-sm font-bold text-ink">نوبت‌های من</h2>
             <span className="chip">{faDigits(appointments.length)} نوبت</span>
@@ -822,7 +822,7 @@ export function AppointmentForm() {
         </div>
       ) : null}
 
-      <div className="rounded-2xl border border-white/75 bg-white/85 backdrop-blur-sm shadow-card p-6 sm:p-8">
+      <div className="rounded-2xl border border-line/80 bg-surface/90 backdrop-blur-sm shadow-card p-6 sm:p-8">
         <div className="flex items-center gap-2">
           <Icon name="info" className="h-4 w-4 text-brand-600" />
           <h2 className="text-sm font-bold text-ink">

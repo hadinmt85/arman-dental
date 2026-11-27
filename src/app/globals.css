@@ -3,40 +3,40 @@
 @theme {
   --font-sans: var(--font-estedad), "Segoe UI", Tahoma, sans-serif;
 
-  --color-paper: #f2f7fc;
-  --color-surface: #ffffff;
-  --color-ink: #0e1b2c;
-  --color-ink-soft: #334155;
-  --color-muted: #5f6d82;
-  --color-line: #dfe8f2;
-  --color-line-strong: #c9d7e6;
+  --color-paper: #f4efe4;
+  --color-surface: #fffdf8;
+  --color-ink: #1b3a2f;
+  --color-ink-soft: #3c5245;
+  --color-muted: #5f6f62;
+  --color-line: #e6dbc7;
+  --color-line-strong: #d4c3a6;
 
-  --color-brand-50: #eff5ff;
-  --color-brand-100: #e0ecff;
-  --color-brand-200: #c3d9ff;
-  --color-brand-300: #93bbff;
-  --color-brand-400: #5f8ff4;
-  --color-brand-500: #3b6ee8;
-  --color-brand-600: #1e4fd8;
-  --color-brand-700: #173fb0;
-  --color-brand-800: #13388f;
-  --color-brand-900: #0b2a45;
+  --color-brand-50: #f1f5ec;
+  --color-brand-100: #e3ebdc;
+  --color-brand-200: #c8d8bf;
+  --color-brand-300: #a6c09b;
+  --color-brand-400: #7fa276;
+  --color-brand-500: #5b8456;
+  --color-brand-600: #356047;
+  --color-brand-700: #2a4e3a;
+  --color-brand-800: #22412f;
+  --color-brand-900: #173026;
 
-  --color-mint-50: #eefaf5;
-  --color-mint-100: #e0f5ec;
-  --color-mint-200: #bfe9d8;
-  --color-mint-300: #8fdcbe;
-  --color-mint-500: #18b480;
-  --color-mint-600: #0f9f6e;
-  --color-mint-700: #0b7f57;
+  --color-mint-50: #fbf6e9;
+  --color-mint-100: #f5ead0;
+  --color-mint-200: #ecd8a8;
+  --color-mint-300: #e0c07c;
+  --color-mint-500: #c9a45a;
+  --color-mint-600: #b18a41;
+  --color-mint-700: #8d6b2f;
 
-  --color-sky: #e7f0fb;
-  --color-sky-soft: #f3f8ff;
+  --color-sky: #eee5d3;
+  --color-sky-soft: #faf5ea;
 
-  --shadow-soft: 0 36px 90px -54px rgba(11, 42, 69, 0.45);
-  --shadow-card: 0 22px 54px -38px rgba(11, 42, 69, 0.38);
-  --shadow-float: 0 26px 64px -30px rgba(11, 42, 69, 0.42);
-  --shadow-glow: 0 20px 44px -24px rgba(30, 79, 216, 0.6);
+  --shadow-soft: 0 36px 90px -54px rgba(27, 58, 47, 0.4);
+  --shadow-card: 0 22px 54px -38px rgba(27, 58, 47, 0.32);
+  --shadow-float: 0 26px 64px -30px rgba(27, 58, 47, 0.38);
+  --shadow-glow: 0 20px 44px -24px rgba(53, 96, 71, 0.5);
 
   --radius-4xl: 2rem;
   --radius-5xl: 2.75rem;
@@ -142,17 +142,17 @@
 
   .btn-primary {
     @apply bg-brand-600 text-white;
-    background-image: linear-gradient(135deg, #3b6ee8 0%, #1e4fd8 52%, #173fb0 100%);
+    background-image: linear-gradient(135deg, #4b7a5d 0%, #356047 52%, #2a4e3a 100%);
     box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.26),
-      0 18px 34px -20px rgba(30, 79, 216, 0.85);
+      inset 0 1px 0 rgba(255, 255, 255, 0.22),
+      0 18px 34px -20px rgba(53, 96, 71, 0.7);
   }
 
   .btn-primary:hover {
-    background-image: linear-gradient(135deg, #4476f0 0%, #2053dd 52%, #1944b9 100%);
+    background-image: linear-gradient(135deg, #58896a 0%, #3d6a50 52%, #2a4e3a 100%);
     box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.3),
-      0 24px 44px -20px rgba(30, 79, 216, 0.9);
+      inset 0 1px 0 rgba(255, 255, 255, 0.26),
+      0 24px 44px -20px rgba(53, 96, 71, 0.8);
     transform: translateY(-1px);
   }
 
@@ -165,13 +165,13 @@
     @apply border-brand-200 bg-white;
     box-shadow:
       inset 0 1px 0 rgba(255, 255, 255, 0.95),
-      0 12px 26px -20px rgba(30, 79, 216, 0.5);
+      0 12px 26px -20px rgba(53, 96, 71, 0.4);
     transform: translateY(-1px);
   }
 
   .btn-light {
     @apply bg-white text-brand-700;
-    box-shadow: 0 18px 34px -22px rgba(4, 16, 38, 0.7);
+    box-shadow: 0 18px 34px -22px rgba(27, 58, 47, 0.45);
   }
 
   .btn-light:hover {
@@ -197,8 +197,8 @@
     background: linear-gradient(
       90deg,
       transparent 0%,
-      var(--color-brand-600) 55%,
-      var(--color-brand-400) 100%
+      var(--color-mint-500) 55%,
+      var(--color-mint-300) 100%
     );
   }
 
@@ -216,7 +216,7 @@
 
   .field {
     @apply w-full rounded-2xl border border-line bg-white/90 px-4 py-3.5 text-sm text-ink transition placeholder:text-muted/60 focus:border-brand-500 focus:bg-white focus:outline-none focus:ring-4 focus:ring-brand-500/10;
-    box-shadow: inset 0 1px 2px rgba(11, 42, 69, 0.04);
+    box-shadow: inset 0 1px 2px rgba(27, 58, 47, 0.04);
   }
 
   .field-error {
@@ -245,11 +245,28 @@
   }
 
   .nav-link {
-    @apply relative rounded-full px-3.5 py-2 text-[13px] font-medium text-muted transition duration-200 hover:bg-brand-50/80 hover:text-brand-700;
+    @apply relative px-1 py-2 text-[14px] font-medium text-ink-soft transition duration-200 hover:text-brand-700;
+  }
+
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    bottom: -5px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--color-mint-500);
+    transform: scaleX(0);
+    transition: transform 0.25s var(--ease-out-expo);
+  }
+
+  .nav-link:hover::after,
+  .nav-link[data-active="true"]::after {
+    transform: scaleX(1);
   }
 
   .nav-link[data-active="true"] {
-    @apply bg-brand-50 text-brand-700;
+    @apply font-semibold text-brand-900;
   }
 
   .image-frame {
@@ -304,39 +321,58 @@
   }
 
   .glass {
-    @apply border border-white/70 bg-white/75 backdrop-blur-xl;
+    @apply border border-white/70 bg-white/65 backdrop-blur-xl;
     box-shadow:
       inset 0 1px 0 rgba(255, 255, 255, 0.9),
-      0 18px 44px -32px rgba(11, 42, 69, 0.4);
+      0 18px 44px -32px rgba(27, 58, 47, 0.35);
+  }
+
+  .panel-cream {
+    @apply rounded-[1.5rem] border border-line/80 bg-[#fbf6ea] shadow-card;
+  }
+
+  .ornament-line {
+    @apply flex items-center justify-center gap-2 text-mint-500;
+  }
+
+  .ornament-line::before,
+  .ornament-line::after {
+    content: "";
+    @apply h-px w-16;
+    background: linear-gradient(90deg, transparent, currentColor);
+  }
+
+  .ornament-line::after {
+    background: linear-gradient(90deg, currentColor, transparent);
   }
 }
 
 @layer utilities {
   .bg-hero {
     background:
-      radial-gradient(1100px 560px at 84% -12%, #e0ecff 0%, transparent 62%),
-      radial-gradient(820px 460px at 2% 76%, #e0f5ec 0%, transparent 64%),
-      linear-gradient(180deg, #fbfdff 0%, #f2f7fc 100%);
+      radial-gradient(1100px 560px at 84% -12%, #f5ead0 0%, transparent 60%),
+      radial-gradient(820px 460px at 2% 76%, #e3ebdc 0%, transparent 62%),
+      linear-gradient(180deg, #fbf8f1 0%, #f4efe4 100%);
   }
 
   .bg-page-soft {
     background:
-      radial-gradient(820px 400px at 94% -12%, #e0ecff 0%, transparent 64%),
-      radial-gradient(620px 340px at 3% 82%, #e0f5ec 0%, transparent 68%),
-      #f7fbff;
+      radial-gradient(820px 400px at 94% -12%, #f5ead0 0%, transparent 60%),
+      radial-gradient(620px 340px at 3% 82%, #e3ebdc 0%, transparent 64%),
+      #faf6ec;
   }
 
   .bg-grid-soft {
     background-image:
-      linear-gradient(to right, rgba(30, 79, 216, 0.055) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(30, 79, 216, 0.055) 1px, transparent 1px);
+      linear-gradient(to right, rgba(53, 96, 71, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(53, 96, 71, 0.06) 1px, transparent 1px);
     background-size: 48px 48px;
     -webkit-mask-image: radial-gradient(ellipse at 50% 20%, black 20%, transparent 76%);
     mask-image: radial-gradient(ellipse at 50% 20%, black 20%, transparent 76%);
   }
 
   .bg-dots {
-    background-image: radial-gradient(rgba(30, 79, 216, 0.16) 1px, transparent 1px);
+    background-image: radial-gradient(rgba(53, 96, 71, 0.16) 1px, transparent 1px);
     background-size: 18px 18px;
   }
 
@@ -346,7 +382,7 @@
   }
 
   .text-gradient {
-    background: linear-gradient(115deg, #1e4fd8 0%, #3b6ee8 62%, #173fb0 100%);
+    background: linear-gradient(115deg, #22412f 0%, #356047 60%, #5b8456 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -371,8 +407,8 @@
 
   .glow-brand {
     box-shadow:
-      0 0 0 1px rgba(30, 79, 216, 0.08),
-      0 24px 60px -30px rgba(30, 79, 216, 0.55);
+      0 0 0 1px rgba(53, 96, 71, 0.08),
+      0 24px 60px -30px rgba(53, 96, 71, 0.45);
   }
 
   .no-scrollbar {

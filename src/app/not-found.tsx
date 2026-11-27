@@ -5,7 +5,7 @@ export default function NotFound() {
   return (
     <section className="bg-page-soft section">
       <div className="container-x">
-        <div className="mx-auto max-w-lg rounded-2xl border border-line bg-white p-8 text-center shadow-card sm:p-10">
+        <div className="mx-auto max-w-lg rounded-2xl border border-line/80 bg-surface p-8 text-center shadow-card sm:p-10">
           <span className="mx-auto grid h-14 w-14 place-items-center rounded-2xl bg-brand-50 text-brand-600">
             <Icon name="tooth" className="h-7 w-7" />
           </span>

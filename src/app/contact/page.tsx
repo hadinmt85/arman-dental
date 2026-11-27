@@ -54,7 +54,7 @@ const access = [
 
 function MapArt() {
   return (
-    <div className="relative min-h-[400px] flex-1 overflow-hidden rounded-2xl border border-line bg-[#eef5fc]">
+    <div className="relative min-h-[400px] flex-1 overflow-hidden rounded-2xl border border-line bg-[#f1ead9]">
       <svg
         viewBox="0 0 800 460"
         className="absolute inset-0 h-full w-full"
@@ -68,24 +68,24 @@ function MapArt() {
             height="58"
             patternUnits="userSpaceOnUse"
           >
-            <rect width="58" height="58" fill="#eef5fc" />
+            <rect width="58" height="58" fill="#f1ead9" />
             <rect
               x="6"
               y="6"
               width="46"
               height="46"
               rx="5"
-              fill="#e2edf9"
+              fill="#e8dec8"
             />
           </pattern>
         </defs>
 
         <rect width="800" height="460" fill="url(#light-blocks)" />
-        <rect x="560" y="40" width="170" height="120" rx="16" fill="#dff3ea" />
-        <rect x="70" y="300" width="140" height="110" rx="16" fill="#dff3ea" />
+        <rect x="560" y="40" width="170" height="120" rx="16" fill="#e2ebdc" />
+        <rect x="70" y="300" width="140" height="110" rx="16" fill="#e2ebdc" />
 
         <g
-          stroke="#fbfdff"
+          stroke="#fdfaf3"
           strokeWidth="16"
           fill="none"
           strokeLinecap="round"
@@ -97,7 +97,7 @@ function MapArt() {
         </g>
 
         <g
-          stroke="#cfdded"
+          stroke="#d6c7ac"
           strokeWidth="2"
           fill="none"
           strokeLinecap="round"
@@ -109,25 +109,25 @@ function MapArt() {
 
         <path
           d="M-30 250 C 170 230 330 270 560 230 S 740 200 830 215"
-          stroke="#1e4fd8"
+          stroke="#356047"
           strokeWidth="2.5"
           strokeDasharray="9 8"
           fill="none"
           opacity="0.55"
         />
 
-        <circle cx="420" cy="214" r="44" fill="#1e4fd8" opacity="0.08" />
-        <circle cx="420" cy="214" r="24" fill="#1e4fd8" opacity="0.12" />
+        <circle cx="420" cy="214" r="44" fill="#356047" opacity="0.08" />
+        <circle cx="420" cy="214" r="24" fill="#356047" opacity="0.12" />
         <g transform="translate(420 206)">
           <path
             d="M0 -18c-8 0-14 6-14 14 0 11 14 24 14 24s14-13 14-24c0-8-6-14-14-14Z"
-            fill="#1e4fd8"
+            fill="#356047"
           />
           <circle cy="-4" r="4.5" fill="#ffffff" />
         </g>
       </svg>
 
-      <div className="absolute inset-x-3 bottom-3 rounded-xl border border-white/75 bg-white/85 backdrop-blur-sm/95 p-4 backdrop-blur sm:inset-x-4 sm:bottom-4">
+      <div className="absolute inset-x-3 bottom-3 rounded-xl border border-line/80 bg-surface/95 p-4 backdrop-blur sm:inset-x-4 sm:bottom-4">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div>
             <p className="text-[9px] text-muted">کلینیک دندانپزشکی آرمان</p>
@@ -147,7 +147,7 @@ function MapArt() {
         </div>
       </div>
 
-      <span className="absolute right-3 top-3 inline-flex items-center gap-1.5 rounded-full border border-white/75 bg-white/85 backdrop-blur-sm/90 px-2.5 py-1.5 text-[9px] font-medium text-ink backdrop-blur sm:right-4 sm:top-4">
+      <span className="absolute right-3 top-3 inline-flex items-center gap-1.5 rounded-full border border-line/80 bg-surface/90 px-2.5 py-1.5 text-[9px] font-medium text-ink backdrop-blur sm:right-4 sm:top-4">
         <span className="h-1.5 w-1.5 rounded-full bg-brand-600" />
         سعادت‌آباد
       </span>
@@ -186,7 +186,7 @@ export default function ContactPage() {
           {infoCards.map((card) => (
             <div
               key={card.label}
-              className="rounded-2xl border border-white/75 bg-white/85 backdrop-blur-sm p-4 shadow-card"
+              className="rounded-2xl border border-line/80 bg-surface/90 backdrop-blur-sm p-4 shadow-card"
             >
               <span className="grid h-9 w-9 place-items-center rounded-xl bg-brand-50 text-brand-600">
                 <Icon name={card.icon} className="h-4 w-4" />
@@ -225,7 +225,7 @@ export default function ContactPage() {
           <div className="flex flex-col gap-4">
             <MapArt />
 
-            <div className="rounded-2xl border border-white/75 bg-white/85 backdrop-blur-sm p-5 shadow-card">
+            <div className="rounded-2xl border border-line/80 bg-surface/90 backdrop-blur-sm p-5 shadow-card">
               <h2 className="text-[12px] font-bold text-ink">
                 راه‌های دسترسی
               </h2>

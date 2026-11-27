@@ -18,25 +18,23 @@ const socialLinks: { href: string; label: string; icon: IconName }[] = [
 
 export function Footer() {
   return (
-    <footer className="relative mt-auto overflow-hidden border-t border-white/70 bg-[#f7fbff]">
+    <footer className="relative mt-auto overflow-hidden border-t border-line/70 bg-paper">
       <div className="pointer-events-none absolute inset-0 bg-grid-soft opacity-40" />
-      <div className="pointer-events-none absolute -left-24 -top-24 h-64 w-64 rounded-full bg-mint-200/25 blur-3xl" />
+      <div className="pointer-events-none absolute -left-24 -top-24 h-64 w-64 rounded-full bg-mint-200/20 blur-3xl" />
       <div className="pointer-events-none absolute -right-20 bottom-0 h-64 w-64 rounded-full bg-brand-200/25 blur-3xl" />
 
-      <div className="container-x relative pb-6 pt-16">
+      <div className="container-x relative pb-24 pt-16 sm:pb-8">
         <div className="grid gap-10 md:grid-cols-12">
           <div className="md:col-span-5">
             <Link href="/" className="group flex items-center gap-2.5">
-              <span className="relative grid h-11 w-11 place-items-center overflow-hidden rounded-[0.95rem] bg-gradient-to-br from-brand-500 via-brand-600 to-brand-700 text-white shadow-[0_14px_26px_-16px_rgba(30,79,216,0.9)] ring-1 ring-white/25 transition duration-500 group-hover:scale-[1.04]">
-                <span className="absolute inset-x-2 top-1 h-px bg-white/40" />
-                <Icon name="tooth" className="h-5 w-5" />
+              <span className="grid h-11 w-11 place-items-center rounded-full border border-mint-300/80 bg-white/50 text-mint-600 shadow-[inset_0_1px_0_rgba(255,255,255,0.9)] transition duration-500 group-hover:rotate-6">
+                <Icon name="tooth" className="h-6 w-6" />
               </span>
               <span>
-                <span className="block text-lg font-extrabold leading-tight tracking-[-0.03em] text-ink">
+                <span className="block text-[19px] font-black leading-tight tracking-[-0.03em] text-brand-900">
                   آرمان
                 </span>
-                <span className="mt-0.5 flex items-center gap-1.5 text-[9px] text-muted">
-                  <span className="h-1 w-1 rounded-full bg-mint-500" />
+                <span className="mt-0.5 block text-[9px] text-muted">
                   کلینیک دندانپزشکی
                 </span>
               </span>

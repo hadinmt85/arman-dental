@@ -50,13 +50,13 @@ export default function GalleryPage() {
       <section className="section">
         <div className="container-x">
           <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-            <span className="chip bg-white">نمونه ۰۱ — بلیچینگ</span>
+            <span className="chip bg-surface/80">نمونه ۰۱ — بلیچینگ</span>
             <span className="text-[9px] text-muted">
               تصویر واقعی · شبیه‌سازی دیجیتال رنگ
             </span>
           </div>
 
-          <div className="rounded-[1.75rem] border border-white/75 bg-white/85 backdrop-blur-sm p-2.5 shadow-soft">
+          <div className="rounded-[1.75rem] border border-line/80 bg-surface/90 backdrop-blur-sm p-2.5 shadow-soft">
             <BeforeAfter
               src="/images/smile.jpg"
               alt="مقایسه قبل و بعد بلیچینگ دندان"
@@ -82,11 +82,11 @@ export default function GalleryPage() {
             </div>
 
             <dl className="grid grid-cols-2 gap-3 self-start">
-              <div className="rounded-xl border border-white/75 bg-white/85 backdrop-blur-sm p-3.5">
+              <div className="rounded-xl border border-line/80 bg-surface/90 backdrop-blur-sm p-3.5">
                 <dt className="text-[9px] text-muted">مدت درمان</dt>
                 <dd className="mt-1 text-[12px] font-bold text-ink">۶۰ دقیقه</dd>
               </div>
-              <div className="rounded-xl border border-white/75 bg-white/85 backdrop-blur-sm p-3.5">
+              <div className="rounded-xl border border-line/80 bg-surface/90 backdrop-blur-sm p-3.5">
                 <dt className="text-[9px] text-muted">تعداد جلسات</dt>
                 <dd className="mt-1 text-[12px] font-bold text-ink">۱ جلسه</dd>
               </div>
@@ -101,7 +101,7 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      <section className="border-y border-line bg-white">
+      <section className="border-y border-line/70 bg-surface/60">
         <div className="container-x section">
           <SectionHeading
             eyebrow="شفافیت"
@@ -116,7 +116,7 @@ export default function GalleryPage() {
                 key={item.title}
                 className="rounded-2xl border border-line bg-sky-soft/60 p-5"
               >
-                <span className="grid h-10 w-10 place-items-center rounded-xl bg-white text-brand-600 shadow-sm">
+                <span className="grid h-10 w-10 place-items-center rounded-xl bg-surface text-brand-700 shadow-sm">
                   <Icon name={item.icon} className="h-4 w-4" />
                 </span>
                 <h3 className="mt-3.5 text-[12px] font-bold text-ink">
@@ -138,7 +138,7 @@ export default function GalleryPage() {
                 sizes="(min-width: 1024px) 50vw, 100vw"
                 className="object-cover"
               />
-              <span className="absolute bottom-3 right-3 rounded-full bg-white/90 px-3 py-1.5 text-[9px] font-medium text-ink backdrop-blur">
+              <span className="absolute bottom-3 right-3 rounded-full bg-surface/90 px-3 py-1.5 text-[9px] font-medium text-ink backdrop-blur">
                 فضای درمانی
               </span>
             </div>
@@ -150,7 +150,7 @@ export default function GalleryPage() {
                 sizes="(min-width: 1024px) 50vw, 100vw"
                 className="object-cover"
               />
-              <span className="absolute bottom-3 right-3 rounded-full bg-white/90 px-3 py-1.5 text-[9px] font-medium text-ink backdrop-blur">
+              <span className="absolute bottom-3 right-3 rounded-full bg-surface/90 px-3 py-1.5 text-[9px] font-medium text-ink backdrop-blur">
                 همراهی تیم
               </span>
             </div>

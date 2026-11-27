@@ -49,7 +49,7 @@ export function ContactForm() {
 
   if (sent) {
     return (
-      <div className="flex h-full flex-col items-center justify-center rounded-2xl border border-white/75 bg-white/85 backdrop-blur-sm p-8 text-center shadow-card sm:p-10">
+      <div className="flex h-full flex-col items-center justify-center rounded-2xl border border-line/80 bg-surface/90 backdrop-blur-sm p-8 text-center shadow-card sm:p-10">
         <span className="grid h-14 w-14 place-items-center rounded-full bg-mint-100 text-mint-700">
           <Icon name="checkCircle" className="h-7 w-7" />
         </span>
@@ -77,7 +77,7 @@ export function ContactForm() {
         event.preventDefault();
         submit();
       }}
-      className="rounded-2xl border border-white/75 bg-white/85 backdrop-blur-sm p-5 shadow-card sm:p-6"
+      className="rounded-2xl border border-line/80 bg-surface/90 backdrop-blur-sm p-5 shadow-card sm:p-6"
     >
       <div className="flex items-center gap-2.5">
         <span className="grid h-9 w-9 place-items-center rounded-xl bg-brand-50 text-brand-600">

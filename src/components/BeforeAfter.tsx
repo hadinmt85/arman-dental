@@ -56,13 +56,13 @@ export function BeforeAfter({
       </div>
 
       <span
-        className="pointer-events-none absolute left-4 top-4 z-10 rounded-full bg-white/90 px-3 py-1.5 text-[10px] font-semibold text-ink shadow-sm backdrop-blur"
+        className="pointer-events-none absolute left-4 top-4 z-10 rounded-full bg-brand-900/85 px-3 py-1.5 text-[10px] font-semibold text-white shadow-sm backdrop-blur"
         dir="rtl"
       >
         قبل
       </span>
       <span
-        className="pointer-events-none absolute right-4 top-4 z-10 rounded-full bg-brand-600 px-3 py-1.5 text-[10px] font-semibold text-white shadow-sm backdrop-blur"
+        className="pointer-events-none absolute right-4 top-4 z-10 rounded-full bg-brand-900 px-3 py-1.5 text-[10px] font-semibold text-white shadow-sm backdrop-blur"
         dir="rtl"
       >
         بعد

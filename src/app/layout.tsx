@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Footer } from "@/components/Footer";
+import { FloatingActions } from "@/components/FloatingActions";
 import { Header } from "@/components/Header";
 import { site } from "@/lib/site";
 import { siteUrl } from "@/lib/site-url";
@@ -40,13 +41,13 @@ export const metadata: Metadata = {
     title: "کلینیک دندانپزشکی آرمان | ایمپلنت، لمینت و زیبایی دندان",
     description: site.description,
     url: "/",
-    images: ["/images/hero-mint-clean.jpg"],
+    images: ["/images/hero-green.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "کلینیک دندانپزشکی آرمان",
     description: site.description,
-    images: ["/images/hero-mint-clean.jpg"],
+    images: ["/images/hero-green.jpg"],
   },
   robots: {
     index: true,
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#f2f7fc",
+  themeColor: "#f4efe4",
   colorScheme: "light",
 };
 
@@ -67,7 +68,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       data-scroll-behavior="smooth"
       className={`${estedad.variable} h-full`}
     >
-      <body className="flex min-h-full flex-col bg-paper text-ink antialiased">
+      <body
+        id="top"
+        className="flex min-h-full flex-col bg-paper text-ink antialiased"
+      >
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:right-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-ink focus:px-5 focus:py-2.5 focus:text-sm focus:font-semibold focus:text-white"
@@ -79,6 +83,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
         </main>
         <Footer />
+        <FloatingActions />
       </body>
     </html>
   );

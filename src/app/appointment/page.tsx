@@ -35,7 +35,7 @@ export default function AppointmentPage() {
         title="زمانت را انتخاب کن."
         description="خدمت، روز و ساعت آزاد را انتخاب کن و اطلاعات تماس را وارد کن. تأیید نهایی توسط پذیرش انجام می‌شود."
       >
-        <div className="inline-flex items-center gap-2 rounded-full border border-brand-200 bg-white px-3 py-1.5 text-[10px] font-medium text-brand-700">
+        <div className="inline-flex items-center gap-2 rounded-full border border-line/80 bg-surface px-3 py-1.5 text-[10px] font-medium text-brand-700">
           <span className="relative flex h-1.5 w-1.5">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-mint-500 opacity-60" />
             <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-mint-500" />
@@ -49,7 +49,7 @@ export default function AppointmentPage() {
           <AppointmentForm />
 
           <aside className="min-w-0 space-y-8 min-[900px]:sticky min-[900px]:top-28">
-            <div className="rounded-2xl border border-white/75 bg-white/85 backdrop-blur-sm p-5 shadow-card">
+            <div className="rounded-2xl border border-line/80 bg-surface/90 backdrop-blur-sm p-5 shadow-card">
               <h2 className="text-sm font-bold text-ink">چرا آنلاین؟</h2>
               <ul className="mt-4 space-y-4">
                 {benefits.map((benefit) => (
@@ -89,7 +89,7 @@ export default function AppointmentPage() {
               </div>
             </div>
 
-            <div className="rounded-2xl border border-white/75 bg-white/85 backdrop-blur-sm p-5 text-[10px] leading-5 text-muted">
+            <div className="rounded-2xl border border-line/80 bg-surface/90 backdrop-blur-sm p-5 text-[10px] leading-5 text-muted">
               <span className="flex items-center gap-1.5 font-semibold text-ink">
                 <Icon name="info" className="h-3.5 w-3.5 text-brand-600" />
                 نسخه نمایشی
